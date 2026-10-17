@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Administraciones Ferrada · Administración de edificios y condominios en Santiago</title>
+<meta name="description" content="Administración profesional de edificios, condominios y propiedades en Santiago. Gastos comunes a mes vencido, transparencia y gestión según la Ley 19.537.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#239154;--verde2:#2fae66;--menta:#eaf6ef;--azul:#0f2a3d;--azul2:#173c55;--tinta:#1c2b36;--suave:#5b6b77;--linea:#dfe8e3;--fondo:#f7faf8;--r:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:400 1rem/1.6 "Inter",system-ui,sans-serif;color:var(--tinta);background:var(--fondo)}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{width:min(1180px,100% - 36px);margin:0 auto}
+h1,h2,h3{font-family:"Manrope",system-ui,sans-serif;line-height:1.15;margin:0;color:var(--azul)}
+.ojo{display:inline-block;font:700 .78rem/1 "Manrope";letter-spacing:.14em;text-transform:uppercase;color:var(--verde);margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:14px 22px;font:700 .98rem/1 "Manrope";text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-v{background:var(--verde);color:#fff}.btn-v:hover{background:var(--verde2)}
+.btn-b{background:#fff;color:var(--azul);border-color:#fff}
+.btn-o{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-wa{background:#25d366;color:#06280f}
+.btn svg{width:18px;height:18px}
+/* cabecera */
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:74px}
+.top img{height:46px;width:auto}
+.top nav{display:flex;gap:26px}.top nav a{text-decoration:none;font:600 .95rem/1 "Manrope";color:var(--azul)}.top nav a:hover{color:var(--verde)}
+.top .btn{padding:11px 18px;font-size:.9rem}
+@media (max-width:900px){.top nav{display:none}.top img{height:38px}}
+/* portada */
+.hero{position:relative;color:#fff;background:var(--azul);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url(assets/edificio.jpg) center/cover;opacity:.32}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--azul) 18%,rgba(15,42,61,.55) 60%,rgba(15,42,61,.2))}
+.hero .wrap{position:relative;z-index:1;padding:96px 0 104px;display:grid;gap:22px;max-width:1180px}
+.hero .ojo{color:#7fe0a6}
+.hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.7rem);max-width:760px}
+.hero h1 em{font-style:normal;color:#7fe0a6}
+.hero p{font-size:1.12rem;max-width:620px;color:#d6e3ea;margin:0}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.hero .sellos{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.sello{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font:600 .88rem/1 "Manrope"}
+.sello i{width:8px;height:8px;border-radius:50%;background:#7fe0a6}
+/* accesos rápidos */
+.rapidos{margin-top:-46px;position:relative;z-index:2}
+.rapidos .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.rap{background:#fff;border-radius:var(--r);padding:20px;box-shadow:0 18px 40px -26px rgba(15,42,61,.45);text-decoration:none;display:grid;gap:6px;border:1px solid var(--linea);transition:transform .15s,border-color .15s}
+.rap:hover{transform:translateY(-3px);border-color:var(--verde)}
+.rap b{font:800 1.02rem/1.2 "Manrope";color:var(--azul)}.rap span{color:var(--suave);font-size:.9rem}
+.rap .ic{width:42px;height:42px;border-radius:12px;background:var(--menta);display:grid;place-items:center;font-size:1.3rem;margin-bottom:4px}
+@media (max-width:900px){.rapidos .wrap{grid-template-columns:repeat(2,1fr)}}
+section{padding:88px 0}
+.cab{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.cab h2{font-size:clamp(1.8rem,3.4vw,2.6rem);max-width:640px}.cab p{max-width:440px;color:var(--suave);margin:0}
+/* quiénes somos */
+.somos{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.somos .foto{border-radius:24px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -36px rgba(15,42,61,.6)}
+.somos .foto img{width:100%;height:100%;object-fit:cover}
+.somos p{color:var(--suave)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.mv div{background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:20px}
+.mv h3{font-size:1.05rem;margin-bottom:8px;color:var(--verde)}.mv p{margin:0;font-size:.94rem}
+@media (max-width:900px){.somos{grid-template-columns:1fr}.mv{grid-template-columns:1fr}}
+/* servicios */
+.servicios{background:#fff}
+.grid-serv{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.serv{background:var(--fondo);border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.serv img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.serv-cu{padding:18px 18px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.num{font:800 .8rem/1 "Manrope";color:var(--verde);letter-spacing:.1em}
+.serv h3{font-size:1.08rem}
+.bajada{margin:0;color:var(--suave);font-size:.92rem}
+details{margin-top:auto;padding-top:10px}
+summary{cursor:pointer;font:700 .9rem/1 "Manrope";color:var(--verde);list-style:none;display:inline-flex;align-items:center;gap:6px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:1.1rem}details[open] summary::after{content:"–"}
+details p{font-size:.92rem;color:var(--tinta);margin:10px 0 0}
+@media (max-width:1000px){.grid-serv{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid-serv{grid-template-columns:1fr}}
+/* diferencias */
+.dif{background:var(--azul);color:#fff}
+.dif h2{color:#fff}.dif .cab p{color:#b9cbd6}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.trio div{background:var(--azul2);border-radius:var(--r);padding:26px;border:1px solid rgba(255,255,255,.08)}
+.trio b{display:block;font:800 1.15rem/1.25 "Manrope";margin-bottom:8px;color:#7fe0a6}.trio p{margin:0;color:#d3e0e8;font-size:.95rem}
+@media (max-width:900px){.trio{grid-template-columns:1fr}}
+/* normativa y ética */
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.caja{background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:26px}
+.caja h3{font-size:1.25rem;margin-bottom:6px}.caja>p{color:var(--suave);margin:0 0 10px}
+.caja ol{margin:12px 0 0;padding-left:22px;font-size:.93rem}.caja li{margin:6px 0}
+@media (max-width:900px){.dos{grid-template-columns:1fr}}
+/* contacto */
+.contacto{background:linear-gradient(135deg,var(--verde),#1b7a46);color:#fff}
+.contacto .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contacto h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.7rem)}.contacto p{color:#e2f5ea}
+.datos{display:grid;gap:12px;margin-top:22px}
+.dato{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.12);border-radius:14px;padding:14px 16px;text-decoration:none}
+.dato b{display:block;font:700 1rem/1.2 "Manrope"}.dato span{font-size:.85rem;color:#d4f0df}
+form.f{background:#fff;color:var(--tinta);border-radius:22px;padding:26px;display:grid;gap:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+form.f h3{font-size:1.25rem}form.f label{display:grid;gap:6px;font:600 .9rem/1 "Manrope"}
+form.f input,form.f select,form.f textarea{font:inherit;padding:12px 14px;border:1px solid var(--linea);border-radius:12px;background:var(--fondo)}
+form.f textarea{min-height:90px;resize:vertical}form.f small{color:var(--suave)}
+@media (max-width:900px){.contacto .wrap{grid-template-columns:1fr}}
+footer{background:#0b2131;color:#9fb3c0;padding:30px 0;font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+/* asistente con botones */
+.bot-btn{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:10px;background:var(--azul);color:#fff;border:0;border-radius:999px;padding:14px 20px 14px 16px;font:700 .95rem/1 "Manrope";box-shadow:0 16px 36px -14px rgba(15,42,61,.75);cursor:pointer}
+.bot-btn .pt{width:10px;height:10px;border-radius:50%;background:#7fe0a6;box-shadow:0 0 0 0 rgba(127,224,166,.7);animation:lat 2s infinite}
+@keyframes lat{70%{box-shadow:0 0 0 10px rgba(127,224,166,0)}100%{box-shadow:0 0 0 0 rgba(127,224,166,0)}}
+.bot{position:fixed;right:18px;bottom:84px;z-index:91;width:min(380px,calc(100% - 24px));max-height:min(620px,calc(100% - 110px));background:#fff;border-radius:22px;box-shadow:0 30px 70px -20px rgba(15,42,61,.55);display:none;flex-direction:column;overflow:hidden;border:1px solid var(--linea)}
+.bot.abierto{display:flex}
+.bot header{background:var(--azul);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:12px}
+.bot header img{width:44px;height:44px;border-radius:12px;object-fit:contain;background:#fff;padding:4px}
+.bot header b{display:block;font:800 1rem/1.2 "Manrope"}.bot header span{font-size:.8rem;color:#9fd8b5}
+.bot header button{margin-left:auto;background:transparent;border:0;color:#fff;font-size:1.4rem;cursor:pointer}
+.bot .log{padding:16px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;background:var(--fondo);flex:1}
+.msg{max-width:88%;padding:11px 14px;border-radius:16px;font-size:.93rem;white-space:pre-line}
+.msg.b{background:#fff;border:1px solid var(--linea);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.u{background:var(--verde);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.opciones{display:flex;flex-wrap:wrap;gap:8px;padding:12px 14px 16px;border-top:1px solid var(--linea);background:#fff}
+.opciones a,.opciones button{font:600 .86rem/1.2 "Manrope";padding:9px 13px;border-radius:999px;border:1.5px solid var(--verde);background:#fff;color:var(--azul);cursor:pointer;text-decoration:none;text-align:left}
+.opciones a:hover,.opciones button:hover{background:var(--menta)}
+@media (max-width:560px){.bot-btn{right:12px;bottom:12px}.bot{right:12px;bottom:76px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="#inicio" aria-label="Administraciones Ferrada"><img src="assets/logo.jpg" alt="Administración Ferrada · Edificios, condominios y propiedades"></a>
+  <nav><a href="#servicios">Servicios</a><a href="#nosotros">Quiénes somos</a><a href="#normativa">Normativa</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn btn-v" href="#contacto">Pedir propuesta</a>
+</div></header>
+
+<section class="hero" id="inicio" style="padding:0"><div class="wrap">
+  <span class="ojo">Edificios · Condominios · Propiedades</span>
+  <h1>Un edificio en <em>buenas manos</em></h1>
+  <p>Coordinamos y supervisamos al personal de mantención y seguridad, y mantenemos una comunicación constante con los propietarios y residentes de cada comunidad.</p>
+  <div class="acciones">
+    <a class="btn btn-v" href="https://wa.me/56956392635?text=Hola%2C%20quiero%20una%20propuesta%20de%20administraci%C3%B3n%20para%20mi%20edificio." target="_blank" rel="noopener">Pedir propuesta para mi edificio</a>
+    <a class="btn btn-o" href="tel:+56956392635">Llamar +56 9 5639 2635</a>
+  </div>
+  <div class="sellos"><span class="sello"><i></i>Gestión según la Ley 19.537</span><span class="sello"><i></i>Gastos comunes a mes vencido</span><span class="sello"><i></i>Información en línea por unidad</span></div>
+</div></section>
+
+<div class="rapidos"><div class="wrap">
+  <a class="rap" href="#servicios"><span class="ic">🧾</span><b>Servicios</b><span>Lo que hacemos por su comunidad</span></a>
+  <a class="rap" href="#s-gastos"><span class="ic">💲</span><b>Gastos comunes</b><span>Cómo los calculamos y cobramos</span></a>
+  <a class="rap" href="#s-mora"><span class="ic">⏳</span><b>Morosidad</b><span>Cobranza con criterio</span></a>
+  <a class="rap" href="#contacto"><span class="ic">📞</span><b>Contacto</b><span>Hable con la administración</span></a>
+</div></div>
+
+<section id="nosotros"><div class="wrap somos">
+  <div>
+    <span class="ojo">Quiénes somos</span>
+    <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Profesionales en administración, contabilidad y seguridad</h2>
+    <p>Somos una empresa formada por profesionales de vasta experiencia en las áreas de administración, contabilidad y seguridad. Atendemos a comunidades y edificios, y también a empresas inmobiliarias, como una alternativa profesional y sólida, gestionando cada comunidad según la Ley 19.537 de Copropiedad Inmobiliaria.</p>
+    <div class="mv">
+      <div><h3>Nuestra misión</h3><p>Resguardar la inversión de cada copropietario, con métodos eficientes y eficaces para cada comunidad, y con la calidad que nuestros clientes más exigentes merecen.</p></div>
+      <div><h3>Nuestra visión</h3><p>Ser una de las compañías más destacadas en la administración inmobiliaria, demostrando que la profesionalización del rubro es la base del bienestar de la comunidad.</p></div>
+    </div>
+  </div>
+  <div class="foto"><img src="assets/torre.jpg" alt="Edificio residencial" loading="lazy"></div>
+</div></section>
+
+<section class="servicios" id="servicios"><div class="wrap">
+  <div class="cab"><div><span class="ojo">Servicios</span><h2>Todo lo que su comunidad necesita, en un solo lugar</h2></div><p>Toque «Ver detalle» en cada servicio para conocer cómo trabajamos.</p></div>
+  <div class="grid-serv"><article class="serv" id="s-espacios"><img src="assets/espacios.jpg" alt="Uso de espacios comunes" loading="lazy"><div class="serv-cu"><span class="num">01</span><h3>Uso de espacios comunes</h3><p class="bajada">Reglamento y convivencia</p><details><summary>Ver detalle</summary><p>Regular el uso de espacios comunes es clave para la buena convivencia entre los copropietarios. Revisamos la regulación actual de estos espacios y solucionamos las irregularidades a través de la modificación del reglamento interno de copropiedad o la creación de un reglamento de convivencia, para que cada propietario use estos espacios de manera equitativa.</p></details></div></article><article class="serv" id="s-personal"><img src="assets/personal.jpg" alt="Manejo de personal" loading="lazy"><div class="serv-cu"><span class="num">02</span><h3>Manejo de personal</h3><p class="bajada">Funciones claras y capacitación</p><details><summary>Ver detalle</summary><p>Regulamos de manera eficiente al personal necesario para el funcionamiento óptimo del edificio: estudios con planillas de control, funciones específicas para cada miembro del personal y capacitación constante. La finalidad es lograr en el personal un compromiso integral con la comunidad.</p></details></div></article><article class="serv" id="s-energia"><img src="assets/energia.jpg" alt="Eficiencia energética" loading="lazy"><div class="serv-cu"><span class="num">03</span><h3>Eficiencia energética</h3><p class="bajada">Menos gasto común</p><details><summary>Ver detalle</summary><p>Reducir los gastos comunes depende directamente de una gestión eficiente del consumo energético. Realizamos estudios para proponer a la comunidad alternativas de inversión que garanticen un consumo eficiente y, con una mantención pertinente, aseguramos de forma permanente la reducción de estos gastos. Contamos con el respaldo técnico para lograrlo.</p></details></div></article><article class="serv" id="s-seguridad"><img src="assets/seguridad.jpg" alt="Seguridad" loading="lazy"><div class="serv-cu"><span class="num">04</span><h3>Seguridad</h3><p class="bajada">Prevención y seguros por ley</p><details><summary>Ver detalle</summary><p>Revisamos completo el sistema de seguridad y prevención de riesgos: los seguros contratados exigidos por ley, las falencias y necesidades del sistema y el estado de las medidas de seguridad, para proponer un sistema óptimo, acorde a la ley y que dé tranquilidad a cada propietario.</p></details></div></article><article class="serv" id="s-mora"><img src="assets/mora.jpg" alt="Manejo de morosidad" loading="lazy"><div class="serv-cu"><span class="num">05</span><h3>Manejo de morosidad</h3><p class="bajada">Cobranza con criterio</p><details><summary>Ver detalle</summary><p>Las situaciones de mora son una constante en la administración de una comunidad. Proponemos distintas estrategias de cobranza según las posibilidades de pago del deudor, sin perjuicio de las necesidades de la comunidad. Las soluciones se acuerdan con el copropietario deudor y se respaldan con su documento jurídico, cuidando la buena convivencia; si es necesario, se aplican las medidas que establece la ley.</p></details></div></article><article class="serv" id="s-fondo"><img src="assets/fondo.jpg" alt="Fondo de reserva" loading="lazy"><div class="serv-cu"><span class="num">06</span><h3>Fondo de reserva</h3><p class="bajada">Respaldo para imprevistos</p><details><summary>Ver detalle</summary><p>El fondo de reserva da a la comunidad un respaldo económico frente a eventualidades. La ley establece su creación y uso, y los copropietarios definen el monto. Evaluamos el monto actual y lo adaptamos a las necesidades reales de la comunidad, analizando también su inversión para aumentar el fondo, la plusvalía y la calidad de vida de los copropietarios.</p></details></div></article><article class="serv" id="s-gastos"><img src="assets/gastos.jpg" alt="Cobro de gastos comunes" loading="lazy"><div class="serv-cu"><span class="num">07</span><h3>Cobro de gastos comunes</h3><p class="bajada">Mes vencido, sin sorpresas</p><details><summary>Ver detalle</summary><p>Cobramos los gastos comunes a mes vencido, es decir, según los gastos reales de la comunidad. Así el cobro es transparente y no deja espacio a ajustes ni cobros sorpresa. Mes a mes calculamos los gastos de cada propietario y los reflejamos en una papeleta de cobro detallada y personalizada.</p></details></div></article><article class="serv" id="s-informacion"><img src="assets/informacion.jpg" alt="Manejo de la información" loading="lazy"><div class="serv-cu"><span class="num">08</span><h3>Manejo de la información</h3><p class="bajada">Transparencia y acceso en línea</p><details><summary>Ver detalle</summary><p>Toda la información de la comunidad se maneja de forma transparente. Trabajamos con un software especializado en administración de condominios que permite a cada propietario acceder a la información de la comunidad y de su unidad, hacer consultas directas a la administración y mantener comunicación directa. El comité cuenta además con canales directos con el administrador.</p></details></div></article></div>
+</div></section>
+
+<section class="dif"><div class="wrap">
+  <div class="cab"><div><span class="ojo" style="color:#7fe0a6">Cómo trabajamos</span><h2>Transparencia en cada peso de su comunidad</h2></div><p>Tres compromisos que marcan la diferencia en el día a día.</p></div>
+  <div class="trio">
+    <div><b>Cobro a mes vencido</b><p>Los gastos comunes se cobran según los gastos reales de la comunidad: sin ajustes ni cobros sorpresa, con una papeleta detallada y personalizada.</p></div>
+    <div><b>Información en línea</b><p>Un software especializado permite a cada propietario revisar la información de la comunidad y de su unidad, y hacer consultas directas a la administración.</p></div>
+    <div><b>Respaldo técnico</b><p>Estudios de eficiencia energética y mantención para reducir de forma permanente los gastos comunes.</p></div>
+  </div>
+</div></section>
+
+<section id="normativa"><div class="wrap">
+  <div class="cab"><div><span class="ojo">Normativa y ética</span><h2>Una gestión que cumple la ley</h2></div><p>Conocemos a fondo la normativa de la administración de condominios y nos regimos por un código de ética.</p></div>
+  <div class="dos">
+    <div class="caja"><h3>Normativa que aplicamos</h3><p>Las principales leyes y reglamentos de la gestión de condominios.</p><details><summary>Ver las 15 normas</summary><ol><li>Ley 19.537/1997, de Copropiedad Inmobiliaria (Ley de condominios).</li><li>D.S. n° 46/1998, Reglamento de la Ley 19.537.</li><li>D.S. n° 230/1998, Reglamento tipo de copropiedad para condominios de viviendas sociales.</li><li>D.F.L. n° 458/1975, Ley General de Urbanismo y Construcciones.</li><li>D.S. n° 47/1992, Ordenanza General de Urbanismo y Construcciones.</li><li>Ley n° 20.016/2005, Calidad de la construcción.</li><li>Ley n° 16.744/1969, Accidentes del trabajo y enfermedades profesionales.</li><li>D.S. n° 40/1969, Reglamento sobre prevención de riesgos profesionales.</li><li>D.S. n° 594/2000, Reglamento de condiciones sanitarias y ambientales en lugares de trabajo.</li><li>D.S. n° 209/2003, Reglamento interno de seguridad para el uso de piscinas.</li><li>Decreto Ley n° 3.607/1981, Ley de vigilancia privada.</li><li>D.S. n° 48/1984, Reglamento de calderas y generadores de vapor.</li><li>D.F.L. 4, n° 20.018/2006, Ley General de Servicios Eléctricos.</li><li>D.S. n° 66/2007, Reglamento de instalaciones interiores y medidores de gas.</li><li>R.E. n° 1.250/2009, Resolución exenta sobre inspección periódica de las instalaciones de gas.</li></ol></details></div>
+    <div class="caja"><h3>Código de ética</h3><p>Eficiencia, discreción, lealtad, imparcialidad, transparencia y honradez.</p><details><summary>Ver los 14 compromisos</summary><ol><li>Ejercer la profesión con eficiencia, discreción, lealtad, imparcialidad, diligencia, transparencia, honradez y competencia, teniendo como principal objetivo la correcta administración de los bienes confiados a su cargo y la prestación de un servicio directo a las personas, mejorando la calidad de vida y el bienestar de los integrantes de la comunidad del condominio.</li><li>Haber recibido, por parte de un organismo competente, una capacitación específica que lo habilite para ejercer este cargo y contar con el respectivo documento que lo acredita.</li><li>Cumplir y hacer cumplir la legislación y reglamentaciones vigentes.</li><li>Actualizar y perfeccionar constantemente sus conocimientos en función de los servicios que brinda.</li><li>Postular sólo a aquellas administraciones que esté capacitado profesionalmente para ejercer y que les pueda dedicar la atención requerida.</li><li>Colaborar con las autoridades constituídas del Estado y organizaciones gremiales del sector, aportando indicaciones pertinentes al perfeccionamiento de la legislación y normativa vigente.</li><li>Tomar las decisiones de compras y contrataciones basándose en el mejor resultado de costo-beneficio para el condominio teniendo en cuenta: precio, calidad, marca, garantía y respaldo profesional.</li><li>Comunicar de forma oportuna, clara, sencilla y veraz a sus administrados respecto de la situación y desenvolvimiento de la comunidad condominal que atiende y especialmente cuando se preveen circunstancias adversas que pueden afectar los bienes confiados a su custodia.</li><li>Defender los intereses y prerrogativas profesionales y la reputación del gremio. Conducirse siempre con plena conciencia de la lealtad y solidaridad profesional, de modo tal que se promueva la cooperación y las buenas relaciones entre todos los administradores.</li><li>Comunicar a tiempo y por escrito a sus administrados la existencia de impedimentos o incompatibilidades para el desempeño del cargo.</li><li>Percibir honorarios y aranceles razonables por sus servicios, que representen una justa remuneración por su gestión, responsabilidad y jerarquía profesional.</li><li>Tratar a sus colegas, clientes, proveedores y personal con equidad, dignidad y respeto, exigiendo reciprocidad de manera que se promueva el bienestar y mejore la calidad de vida.</li><li>Respetar la inviolabilidad del hogar, manteniendo la prudencia y reserva de la información confidencial que pueda obtener en el interior del condominio de sus administrados.</li><li>Observar los postulados de este código, ejerciendo su cargo con dignidad.</li></ol></details></div>
+  </div>
+</div></section>
+
+<section class="contacto" id="contacto"><div class="wrap">
+  <div>
+    <span class="ojo" style="color:#d4f0df">Contacto</span>
+    <h2>¿Busca administración para su edificio?</h2>
+    <p>Cuéntenos de su comunidad y le preparamos una propuesta. También atendemos consultas de copropietarios y residentes.</p>
+    <div class="datos">
+      <a class="dato" href="tel:+56956392635"><span style="font-size:1.4rem">📱</span><div><b>+56 9 5639 2635 · +56 9 8560 5567</b><span>Móviles</span></div></a>
+      <a class="dato" href="tel:+5625240193"><span style="font-size:1.4rem">☎️</span><div><b>+56 2 5240 193</b><span>Teléfono fijo</span></div></a>
+      <a class="dato" href="mailto:contacto@administracionesferrada.cl"><span style="font-size:1.4rem">✉️</span><div><b>contacto@administracionesferrada.cl</b><span>Correo</span></div></a>
+      <a class="dato" href="https://wa.me/56956392635?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Administraciones%20Ferrada%20y%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener"><span style="font-size:1.4rem">💬</span><div><b>Escribir por WhatsApp</b><span>Respuesta en horario hábil</span></div></a>
+    </div>
+  </div>
+  <form class="f" id="f">
+    <h3>Solicite su propuesta</h3>
+    <label>Su nombre<input id="fn" required autocomplete="name"></label>
+    <label>¿Es usted…?<select id="ft"><option>Miembro del comité de administración</option><option>Copropietario o residente</option><option>Empresa inmobiliaria</option><option>Otro</option></select></label>
+    <label>Edificio o condominio y comuna<input id="fe" placeholder="Ej: Edificio Los Álamos, Ñuñoa"></label>
+    <label>Su consulta<textarea id="fm"></textarea></label>
+    <button class="btn btn-v" type="submit">Enviar por correo</button>
+    <small>Se abre su correo con el mensaje listo. Esta página no guarda sus datos.</small>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><span>Administraciones Ferrada · Santiago, Chile</span><span>contacto@administracionesferrada.cl</span></div></footer>
+
+<button class="bot-btn" id="botBtn" type="button" aria-expanded="false" aria-controls="bot"><span class="pt"></span>¿En qué le ayudamos?</button>
+<div class="bot" id="bot" role="dialog" aria-label="Asistente de Administraciones Ferrada">
+  <header><img src="assets/logo.jpg" alt=""><div><b>Administraciones Ferrada</b><span>Asistente · respuestas al instante</span></div><button type="button" id="botX" aria-label="Cerrar">×</button></header>
+  <div class="log" id="botLog" aria-live="polite"></div>
+  <div class="opciones" id="botOp"></div>
+</div>
+
+<script>
+const BOT = {"inicio": {"m": "Hola 👋 Soy el asistente de Administraciones Ferrada. ¿En qué le puedo ayudar?", "b": [["🏢 Quiero administración para mi edificio", "cotizar"], ["🏠 Soy copropietario o residente", "copro"], ["🧾 Servicios", "servicios"], ["⚖️ Normativa", "normativa"], ["📞 Hablar con una persona", "contacto"]]}, "cotizar": {"m": "Administramos comunidades, edificios y condominios, y atendemos a empresas inmobiliarias. Para preparar una propuesta nos sirve saber: nombre y comuna del edificio, cantidad de unidades y si hoy tienen administración.", "b": [["💬 Pedir propuesta por WhatsApp", "https://wa.me/56956392635?text=Hola%2C%20quiero%20una%20propuesta%20de%20administraci%C3%B3n%20para%20mi%20edificio.%20Nombre%20y%20comuna%3A%20%E2%80%A6%20Unidades%3A%20%E2%80%A6%20%C2%BFTiene%20administraci%C3%B3n%20hoy%3F%3A%20%E2%80%A6"], ["✉️ Pedir propuesta por correo", "mailto:contacto@administracionesferrada.cl?subject=Propuesta%20de%20administración%20para%20mi%20edificio"], ["🧾 Ver servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "copro": {"m": "¿Sobre qué es su consulta?", "b": [["💲 Gastos comunes", "gastos"], ["⏳ Deuda o morosidad", "mora"], ["🌳 Espacios comunes", "espacios"], ["📊 Información de mi unidad", "informacion"], ["↩️ Volver al inicio", "inicio"]]}, "servicios": {"m": "Estos son nuestros servicios. Toque uno para ver el detalle:", "b": [["Uso de espacios comunes", "espacios"], ["Manejo de personal", "personal"], ["Eficiencia energética", "energia"], ["Seguridad", "seguridad"], ["Manejo de morosidad", "mora"], ["Fondo de reserva", "fondo"], ["Cobro de gastos comunes", "gastos"], ["Manejo de la información", "informacion"], ["↩️ Volver al inicio", "inicio"]]}, "normativa": {"m": "Trabajamos según la Ley 19.537 de Copropiedad Inmobiliaria y su reglamento (D.S. 46/1998), además de la normativa de construcción, seguridad laboral, piscinas, gas, calderas, electricidad y vigilancia privada. La lista completa está en la sección «Normativa» de esta página.", "b": [["📄 Ver la lista completa", "#normativa"], ["📞 Hablar con una persona", "contacto"], ["↩️ Volver al inicio", "inicio"]]}, "contacto": {"m": "Puede escribirnos o llamarnos:\n• Móviles: +56 9 5639 2635 / +56 9 8560 5567\n• Teléfono: +56 2 5240 193\n• Correo: contacto@administracionesferrada.cl", "b": [["💬 WhatsApp", "https://wa.me/56956392635?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Administraciones%20Ferrada%20y%20quiero%20hacer%20una%20consulta."], ["📞 Llamar", "tel:+56956392635"], ["✉️ Escribir un correo", "mailto:contacto@administracionesferrada.cl?subject=Consulta%20desde%20la%20página%20web"], ["↩️ Volver al inicio", "inicio"]]}, "espacios": {"m": "Regular el uso de espacios comunes es clave para la buena convivencia entre los copropietarios. Revisamos la regulación actual de estos espacios y solucionamos las irregularidades a través de la modificación del reglamento interno de copropiedad o la creación de un reglamento de convivencia, para que cada propietario use estos espacios de manera equitativa.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "personal": {"m": "Regulamos de manera eficiente al personal necesario para el funcionamiento óptimo del edificio: estudios con planillas de control, funciones específicas para cada miembro del personal y capacitación constante. La finalidad es lograr en el personal un compromiso integral con la comunidad.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "energia": {"m": "Reducir los gastos comunes depende directamente de una gestión eficiente del consumo energético. Realizamos estudios para proponer a la comunidad alternativas de inversión que garanticen un consumo eficiente y, con una mantención pertinente, aseguramos de forma permanente la reducción de estos gastos. Contamos con el respaldo técnico para lograrlo.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "seguridad": {"m": "Revisamos completo el sistema de seguridad y prevención de riesgos: los seguros contratados exigidos por ley, las falencias y necesidades del sistema y el estado de las medidas de seguridad, para proponer un sistema óptimo, acorde a la ley y que dé tranquilidad a cada propietario.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "mora": {"m": "Las situaciones de mora son una constante en la administración de una comunidad. Proponemos distintas estrategias de cobranza según las posibilidades de pago del deudor, sin perjuicio de las necesidades de la comunidad. Las soluciones se acuerdan con el copropietario deudor y se respaldan con su documento jurídico, cuidando la buena convivencia; si es necesario, se aplican las medidas que establece la ley.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "fondo": {"m": "El fondo de reserva da a la comunidad un respaldo económico frente a eventualidades. La ley establece su creación y uso, y los copropietarios definen el monto. Evaluamos el monto actual y lo adaptamos a las necesidades reales de la comunidad, analizando también su inversión para aumentar el fondo, la plusvalía y la calidad de vida de los copropietarios.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "gastos": {"m": "Cobramos los gastos comunes a mes vencido, es decir, según los gastos reales de la comunidad. Así el cobro es transparente y no deja espacio a ajustes ni cobros sorpresa. Mes a mes calculamos los gastos de cada propietario y los reflejamos en una papeleta de cobro detallada y personalizada.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}, "informacion": {"m": "Toda la información de la comunidad se maneja de forma transparente. Trabajamos con un software especializado en administración de condominios que permite a cada propietario acceder a la información de la comunidad y de su unidad, hacer consultas directas a la administración y mantener comunicación directa. El comité cuenta además con canales directos con el administrador.", "b": [["🏢 Pedir propuesta", "cotizar"], ["🧾 Otros servicios", "servicios"], ["↩️ Volver al inicio", "inicio"]]}};
+const log = document.getElementById('botLog'), op = document.getElementById('botOp'), caja = document.getElementById('bot'), btn = document.getElementById('botBtn');
+function burbuja(t, quien){ const d=document.createElement('div'); d.className='msg '+quien; d.textContent=t; log.appendChild(d); log.scrollTop=log.scrollHeight; }
+function ir(id, etiqueta){
+  if (etiqueta) burbuja(etiqueta, 'u');
+  const n = BOT[id]; if (!n) return;
+  setTimeout(()=>{ burbuja(n.m, 'b'); op.innerHTML='';
+    n.b.forEach(([t, dest])=>{
+      if (/^(https?:|tel:|mailto:|#)/.test(dest)) { const a=document.createElement('a'); a.href=dest; a.textContent=t; if (/^https?:/.test(dest)) { a.target='_blank'; a.rel='noopener'; } if (dest[0]==='#') a.addEventListener('click',()=>abrir(false)); op.appendChild(a); }
+      else { const b=document.createElement('button'); b.type='button'; b.textContent=t; b.onclick=()=>ir(dest, t); op.appendChild(b); }
+    }); }, etiqueta ? 260 : 0);
+}
+function abrir(si){ caja.classList.toggle('abierto', si); btn.setAttribute('aria-expanded', si); if (si && !log.children.length) ir('inicio'); }
+btn.onclick = ()=>abrir(!caja.classList.contains('abierto'));
+document.getElementById('botX').onclick = ()=>abrir(false);
+document.getElementById('f').addEventListener('submit', ev=>{ ev.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const cuerpo = 'Nombre: '+v('fn')+'\nSoy: '+v('ft')+'\nEdificio/comuna: '+v('fe')+'\n\n'+v('fm');
+  location.href = 'mailto:contacto@administracionesferrada.cl?subject='+encodeURIComponent('Solicitud de propuesta desde la página web')+'&body='+encodeURIComponent(cuerpo); });
+</script>
+</body>
+</html>
