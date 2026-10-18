@@ -159,6 +159,9 @@ details.pr p{color:var(--suave);font-size:.97rem}
 .socio span{width:64px;height:64px;border-radius:50%;background:var(--menta);color:var(--verde);display:grid;place-items:center;font:800 1.35rem/1 "Manrope";margin-bottom:8px}
 .socio b{font:800 1.15rem/1.25 "Manrope";color:var(--azul)}.socio small{font-size:.95rem;color:var(--suave)}
 @media (max-width:900px){.socios{grid-template-columns:1fr}}
+form.f label.acepto{display:flex;align-items:flex-start;gap:10px;font:500 .9rem/1.4 "Inter"}
+form.f label.acepto input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--verde)}
+footer a{color:#cfe9da}
 </style>
 </head>
 <body>
@@ -246,13 +249,14 @@ details.pr p{color:var(--suave);font-size:.97rem}
     <label>Su nombre<input id="fn" required autocomplete="name"></label>
     <label>¿Es usted…?<select id="ft"><option>Miembro del comité de administración</option><option>Copropietario o residente</option><option>Empresa inmobiliaria</option><option>Otro</option></select></label>
     <label>Edificio o condominio y comuna<input id="fe" placeholder="Ej: Edificio Los Álamos, Ñuñoa"></label>
-    <label>Su consulta<textarea id="fm"></textarea></label>
+    <label>Su consulta<textarea id="fm" placeholder="No incluya datos de salud ni claves"></textarea></label>
+    <label class="acepto"><input type="checkbox" id="facepto" required> <span>Acepto la <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad</a></span></label>
     <button class="btn btn-v" type="submit">Enviar por correo</button>
-    <small>Se abre su correo con el mensaje listo. Esta página no guarda sus datos.</small>
+    <small>Se abre su correo con el mensaje listo. Esta página no guarda sus datos (<a href="privacidad.html">política de privacidad</a>).</small>
   </form>
 </div></section>
 
-<footer><div class="wrap"><span>Administraciones Ferrada · Santiago, Chile</span><span>contacto@administracionesferrada.cl</span></div></footer>
+<footer><div class="wrap"><span>Administraciones Ferrada SpA · Santiago, Chile</span><span>contacto@administracionesferrada.cl · <a href="privacidad.html">Política de privacidad</a></span></div></footer>
 
 <nav class="barra" aria-label="Acciones rápidas"><a href="tel:+56956392635">📞<span>Llamar</span></a><a href="https://wa.me/56956392635?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Administraciones%20Ferrada%20y%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">💬<span>WhatsApp</span></a><a href="#contacto" class="v">🏢<span>Propuesta</span></a></nav>
 <button class="bot-btn" id="botBtn" type="button" aria-expanded="false" aria-controls="bot"><span class="pt"></span>¿En qué le ayudamos?</button>
