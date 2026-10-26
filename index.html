@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--verde:#239154;--verde2:#2fae66;--menta:#eaf6ef;--azul:#0f2a3d;--azul2:#173c55;--tinta:#1c2b36;--suave:#5b6b77;--linea:#dfe8e3;--fondo:#f7faf8;--r:18px}
+:root{--verde:#1d7a46;--verde2:#17663a;--menta:#eaf6ef;--azul:#0f2a3d;--azul2:#173c55;--tinta:#1c2b36;--suave:#5b6b77;--linea:#dfe8e3;--fondo:#f7faf8;--r:18px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:400 1rem/1.6 "Inter",system-ui,sans-serif;color:var(--tinta);background:var(--fondo)}
 img{max-width:100%;display:block}a{color:inherit}
 .wrap{width:min(1180px,100% - 36px);margin:0 auto}
@@ -57,7 +57,8 @@ header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);bac
 .rap:hover{transform:translateY(-3px);border-color:var(--verde)}
 .rap b{font:800 1.02rem/1.2 "Manrope";color:var(--azul)}.rap span{color:var(--suave);font-size:.9rem}
 .rap .ic{width:42px;height:42px;border-radius:12px;background:var(--menta);display:grid;place-items:center;font-size:1.3rem;margin-bottom:4px}
-@media (max-width:900px){.rapidos .wrap{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){.rapidos .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rap{min-width:0;overflow-wrap:anywhere}
 section{padding:88px 0}
 .cab{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px;flex-wrap:wrap}
 .cab h2{font-size:clamp(1.8rem,3.4vw,2.6rem);max-width:640px}.cab p{max-width:440px;color:var(--suave);margin:0}
@@ -99,15 +100,16 @@ details p{font-size:.92rem;color:var(--tinta);margin:10px 0 0}
 .caja ol{margin:12px 0 0;padding-left:22px;font-size:.93rem}.caja li{margin:6px 0}
 @media (max-width:900px){.dos{grid-template-columns:1fr}}
 /* contacto */
-.contacto{background:linear-gradient(135deg,var(--verde),#1b7a46);color:#fff}
+.contacto{background:linear-gradient(135deg,var(--verde),#15603a);color:#fff}
 .contacto .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.contacto h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.7rem)}.contacto p{color:#e2f5ea}
+.contacto .wrap>*,.dato>*{min-width:0}.dato b{overflow-wrap:anywhere}
+.contacto h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.7rem)}.contacto p{color:#fff}
 .datos{display:grid;gap:12px;margin-top:22px}
 .dato{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.12);border-radius:14px;padding:14px 16px;text-decoration:none}
-.dato b{display:block;font:700 1rem/1.2 "Manrope"}.dato span{font-size:.85rem;color:#d4f0df}
+.dato b{display:block;font:700 1rem/1.2 "Manrope"}.dato span{font-size:.85rem;color:#fff}
 form.f{background:#fff;color:var(--tinta);border-radius:22px;padding:26px;display:grid;gap:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
 form.f h3{font-size:1.25rem}form.f label{display:grid;gap:6px;font:600 .9rem/1 "Manrope"}
-form.f input,form.f select,form.f textarea{font:inherit;padding:12px 14px;border:1px solid var(--linea);border-radius:12px;background:var(--fondo)}
+form.f label{min-width:0}form.f input,form.f select,form.f textarea{width:100%;min-width:0;max-width:100%;font:inherit;padding:12px 14px;border:1px solid var(--linea);border-radius:12px;background:var(--fondo)}
 form.f textarea{min-height:90px;resize:vertical}form.f small{color:var(--suave)}
 @media (max-width:900px){.contacto .wrap{grid-template-columns:1fr}}
 footer{background:#0b2131;color:#9fb3c0;padding:30px 0;font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -155,7 +157,7 @@ details.pr p{color:var(--suave);font-size:.97rem}
  .barra{position:fixed;left:0;right:0;bottom:0;z-index:89;display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-top:1px solid var(--linea);box-shadow:0 -10px 30px -18px rgba(15,42,61,.5);padding-bottom:env(safe-area-inset-bottom)}
  .barra a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px 10px;text-decoration:none;font-size:1.15rem}
  .barra a span{font:700 .78rem/1 "Manrope";color:var(--azul)}
- .barra a.v{background:var(--verde)}.barra a.v span{color:#fff}
+ .barra a.v{background:var(--verde);color:#fff}.barra a.v span{color:#fff}
  body{padding-bottom:64px}
  .bot-btn{bottom:76px;padding:10px 14px 10px 12px;font-size:.84rem}.bot{bottom:138px;max-height:calc(100% - 160px)}
 }
@@ -241,7 +243,7 @@ footer a{color:#cfe9da}
 
 <section class="contacto" id="contacto"><div class="wrap">
   <div>
-    <span class="ojo" style="color:#d4f0df">Contacto</span>
+    <span class="ojo" style="color:#fff">Contacto</span>
     <h2>¿Busca administración para su edificio?</h2>
     <p>Cuéntenos de su comunidad y le preparamos una propuesta. También atendemos consultas de copropietarios y residentes.</p>
     <div class="datos">
