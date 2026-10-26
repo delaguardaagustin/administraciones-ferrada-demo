@@ -6,6 +6,12 @@
 <meta name="robots" content="noindex">
 <title>Administraciones Ferrada · Administración de edificios y condominios en Santiago</title>
 <meta name="description" content="Administración profesional de edificios, condominios y propiedades en Santiago. Cobro de gastos comunes, cobro constante de la morosidad y gestión según la Ley 21.442.">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://delaguardaagustin.github.io/administraciones-ferrada-demo/">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_CL"><meta property="og:site_name" content="Administraciones Ferrada">
+<meta property="og:title" content="Administraciones Ferrada · Edificios y condominios en Santiago"><meta property="og:description" content="Cobro de gastos comunes, cobro constante de la morosidad y gestión según la Ley 21.442. Pida una propuesta para su comunidad.">
+<meta property="og:url" content="https://delaguardaagustin.github.io/administraciones-ferrada-demo/"><meta property="og:image" content="https://delaguardaagustin.github.io/administraciones-ferrada-demo/assets/vista-previa.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -246,17 +252,17 @@ footer a{color:#cfe9da}
   </div>
   <form class="f" id="f">
     <h3>Solicite su propuesta</h3>
-    <label>Su nombre<input id="fn" required autocomplete="name"></label>
+    <label>Su nombre<input id="fn" required minlength="2" maxlength="80" autocomplete="name"></label>
     <label>¿Es usted…?<select id="ft"><option>Miembro del comité de administración</option><option>Copropietario o residente</option><option>Empresa inmobiliaria</option><option>Otro</option></select></label>
-    <label>Edificio o condominio y comuna<input id="fe" placeholder="Ej: Edificio Los Álamos, Ñuñoa"></label>
-    <label>Su consulta<textarea id="fm" placeholder="No incluya datos de salud ni claves"></textarea></label>
+    <label>Edificio o condominio y comuna<input id="fe" required minlength="4" maxlength="120" placeholder="Ej: Edificio Los Álamos, Ñuñoa"></label>
+    <label>Su consulta<textarea id="fm" required minlength="10" maxlength="2000" placeholder="No incluya datos de salud ni claves"></textarea></label>
     <label class="acepto"><input type="checkbox" id="facepto" required> <span>Acepto la <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad</a></span></label>
     <button class="btn btn-v" type="submit">Enviar por correo</button>
     <small>Se abre su correo con el mensaje listo. Esta página no guarda sus datos (<a href="privacidad.html">política de privacidad</a>).</small>
   </form>
 </div></section>
 
-<footer><div class="wrap"><span>Administraciones Ferrada SpA · Santiago, Chile · Registro de Administradores N° PN-7228</span><span>contacto@administracionesferrada.cl · <a href="privacidad.html">Política de privacidad</a></span></div></footer>
+<footer><div class="wrap"><span>Administraciones Ferrada SpA · Santiago, Chile · Registro de Administradores N° PN-7228</span><span>contacto@administracionesferrada.cl · <a href="privacidad.html">Política de privacidad</a> · <a href="terminos.html">Términos de uso</a></span></div></footer>
 
 <nav class="barra" aria-label="Acciones rápidas"><a href="tel:+56956392635">📞<span>Llamar</span></a><a href="https://wa.me/56956392635?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Administraciones%20Ferrada%20y%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">💬<span>WhatsApp</span></a><a href="#contacto" class="v">🏢<span>Propuesta</span></a></nav>
 <button class="bot-btn" id="botBtn" type="button" aria-expanded="false" aria-controls="bot"><span class="pt"></span>¿En qué le ayudamos?</button>
