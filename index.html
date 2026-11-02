@@ -73,7 +73,7 @@ section{padding:88px 0}
 @media (max-width:900px){.somos{grid-template-columns:1fr}.mv{grid-template-columns:1fr}}
 /* servicios */
 .servicios{background:#fff}
-.grid-serv{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.grid-serv{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:start}
 .serv{background:var(--fondo);border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
 .serv img{aspect-ratio:16/10;object-fit:cover;width:100%}
 .serv-cu{padding:18px 18px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
@@ -86,6 +86,7 @@ summary::-webkit-details-marker{display:none}summary::after{content:"+";font-siz
 details p{font-size:.92rem;color:var(--tinta);margin:10px 0 0}
 @media (max-width:1000px){.grid-serv{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.grid-serv{grid-template-columns:1fr}}
+@media (min-width:561px){.serv h3{min-height:2.7em}.bajada{min-height:3.2em}}
 /* diferencias */
 .dif{background:var(--azul);color:#fff}
 .dif h2{color:#fff}.dif .cab p{color:#b9cbd6}
